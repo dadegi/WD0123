@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="assets/img/EPICODE-pitto-color.png" width="100" alt="Logo Epicode">
+        </div>
+        <h1>EPICODE</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" title="Tabelle">Tabelle</a>
+                </li>
+                <li>
+                    <a href="form.html" title="Form">Form</a>
+                </li>
+                <li>
+                    <a href="box.html" title="Contenitori">Contenitori</a>
+                </li>
+            </ul>
+        </nav>
+        <input type="search" id="search" name="search" placeholder="Cerca">
+        <button type="button" id="invia">CERCA</button>
+    </header>
+
+    <hr>
+
+    <div id="container">
+        <form method="GET" action="grazie.html">
+            <fieldset>
+                <legend>Anagrafica</legend>
+                <label for="name">Nome e cognome</label>
+                <input type="text" id="name" name="name" placeholder="Inserisci nome e cognome" size="50" required>
+                <label for="birthDate">Data di nascita</label>
+                <input type="date" id="birthDate" name="birthDate">
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Informazioni di contatto</legend>
+                <label for="address">Indirizzo</label><br>
+                <textarea id="address" name="address" rows="3" cols="80"
+                    placeholder="inserisci il tuo indirizzo"></textarea>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="inserisci una email valida" size="50" required>
+                <label for="phone">Telefono</label>
+                <input type="tel" id="phone" name="phone" placeholder="inserisci il contatto telefonico" size="40">
+                <br><br>
+                <label for="password">Password scelta</label>
+                <input type="password" id="password" name="password" required>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Preferenze</legend>
+                <label for="corso">Corso scelto</label>
+                <select id="corso" name="corso" required>
+                    <option value="" selected></option>
+                    <option value="FS">Full-stack</option>
+                    <option value="FE">Front-End</option>
+                    <option value="BE">Back-End</option>
+                </select>
+                <br>
+
+                <label>Linguaggi scelti</label>
+                <input type="checkbox" id="HTML" name="HTML" value="HTML">
+                <label for="HTML">HTML</label>
+                <input type="checkbox" id="CSS" name="CSS" value="CSS">
+                <label for="CSS">CSS</label>
+                <input type="checkbox" id="JS" name="JS" value="JS">
+                <label for="JS">Javascript</label>
+                <input type="checkbox" id="PHP" name="PHP" value="PHP">
+                <label for="PHP">PHP</label>
+                <input type="checkbox" id="ASPX" name="ASPX" value="ASPX">
+                <label for="ASPX">ASPX</label>
+                <br>
+
+                <label>Durata preferita</label><br>
+                <input type="radio" id="3m" name="durata" value="3" required>
+                <label for="3m">3 Mesi</label>
+                <br>
+                <input type="radio" id="6m" name="durata" value="6">
+                <label for="6m">6 Mesi</label>
+                <br>
+                <input type="radio" id="9m" name="durata" value="9">
+                <label for="9m">9 Mesi</label>
+            </fieldset>
+            <br>
+            <button type="submit" id="submit">INVIA</button>
+            <button type="reset" id="reset">CANCELLA</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <footer>
+        <address>Epicode - via dei Grandi Magazzini 16 - 00100 Roma</address>
+        <ul>
+            <li><a href="chisiamo.html" title="Chi siamo">Chi siamo</a></li>
+            <li><a href="info.html" title="Informazioni">Informazioni</a></li>
+            <li><a href="contatti.html" title="Contatti">Contatti</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

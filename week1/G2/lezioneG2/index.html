@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelle</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="assets/img/EPICODE-pitto-color.png" width="100" alt="Logo Epicode">
+        </div>
+        <h1>EPICODE</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" title="Tabelle">Tabelle</a>
+                </li>
+                <li>
+                    <a href="form.html" title="Form">Form</a>
+                </li>
+                <li>
+                    <a href="box.html" title="Contenitori">Contenitori</a>
+                </li>
+            </ul>
+        </nav>
+        <input type="search" id="search" name="search" placeholder="Cerca">
+        <button type="button" id="invia">CERCA</button>
+    </header>
+
+    <hr>
+
+    <div id="container">
+        <table>
+            <caption>Registro presenze</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cognome</th>
+                    <th>Presenze</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mario</td>
+                    <td>Rossi</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Aldo</td>
+                    <td>Bianchi</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>Verdi</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" colspan="2">Totale studenti</td> <!-- Unione di due righe e due colonne -->
+                    <td>3</td> <!-- terza cella della riga -->
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <!-- Occupate due righe e due colonne dal <tr> precedente, per cuui serve una sola cella -->
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><b>*Sono state totalizzate 82 presenze</b></td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </div>
+
+    <hr>
+
+    <footer>
+        <address>Epicode - via dei Grandi Magazzini 16 - 00100 Roma</address>
+        <ul>
+            <li><a href="chisiamo.html" title="Chi siamo">Chi siamo</a></li>
+            <li><a href="info.html" title="Informazioni">Informazioni</a></li>
+            <li><a href="contatti.html" title="Contatti">Contatti</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
