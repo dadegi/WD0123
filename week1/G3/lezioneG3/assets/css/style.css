@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* SELETTORE DI DISCENDENTI */
+
+#container h3 {
+    font-size: 25px;
+    color: red;
+}
+
+/* SELETTORE DI FIGLI DIRETTI */
+
+#figlidiretti > h3 {
+    font-size: 25px;
+    color: red;
+}
+
+/* SELETTORE DI FRATELLI ADIACENTI */
+
+h2 + h3 {
+    text-decoration: underline;
+}
+
+#adiacenti li + li {
+    color: red;
+    margin-left: 10px;
+}
+
+/* SELETTORE GENERALE DI FRATELLI */
+
+#fratelli ~ h3 {
+    text-decoration: underline;
+}
+
+/* Pseudo-aclasse :hover */
+
+a, a:link, a:visited {
+    text-decoration: none;
+    color: cyan;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/* ::before - ::after */
+
+#before li::before {
+    content: 'Studente: ';
+}
+
+#before li::after {
+    content: ' - Corso Epicode FS0123';
+}
+
+/* nth-child */
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 2px solid black;
+}
+
+thead tr th:nth-child(1) {
+    background-color: cyan;
+}
+
+tr:nth-child(odd) {
+    background-color: pink;
+}
+
+tr:nth-child(even) {
+    background-color: gray;
+}
+
+tbody tr:hover {
+    background-color: yellow;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
