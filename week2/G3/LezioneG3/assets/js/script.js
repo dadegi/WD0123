@@ -39,12 +39,12 @@ function Studente(_nome, _cognome, _corso) {
     };
 }
 
-const studente1 = new Studente('Umberto', 'Barera', 'WD0123');
-const studente2 = new Studente('Vincenzo', 'De Vito', 'WD0123');
-const studente3 = new Studente('Valerio', 'Tiso', 'WD0123');
+const umberto = new Studente('Umberto', 'Barera', 'WD0123');
+const vincenzo = new Studente('Vincenzo', 'De Vito', 'WD0123');
+const valerio = new Studente('Valerio', 'Tiso', 'WD0123');
 
 document.getElementById('studenti').innerHTML =
-    studente1.stampa() + ', ' + studente2.stampa() + ', ' + studente3.stampa();
+    umberto.stampa() + ', ' + vincenzo.stampa() + ', ' + valerio.stampa();
 
 //ARRAY
 var array1 = [
