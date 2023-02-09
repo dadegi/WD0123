@@ -4,11 +4,15 @@ var operazione;
 var numero1;
 var numero2;
 var risultato;
+var arrayStudenti = [];
 
 window.addEventListener('load', init);
 
 function init() {
-    lista();
+    leggi();
+    if (arrayStudenti != []) {
+        lista();
+    }
 }
 
 btnCalcola.addEventListener('click', function () {
@@ -64,7 +68,11 @@ btnReset.addEventListener('click', function() {
 });
 
 // Ciclo FOR
-var arrayStudenti = ['Promi', 'Vincenzo', 'Alessio', 'Sara', 'AndreaB', 'AndreaR', 'Antonio', 'Chiara', 'DanieleC', 'DanieleM'];
+function leggi() {
+    if (localStorage.getItem('elenco')) {
+        arrayStudenti = localStorage.getItem('elenco').split(',');
+    }
+}
 
 document.getElementById('aggiungi').addEventListener('click', function() {
     let nuovo = document.getElementById('nuovo').value;
@@ -80,7 +88,7 @@ document.getElementById('aggiungi').addEventListener('click', function() {
 
 function lista() {
     document.getElementById('cicloFor').innerHTML = '';
-    for(let i = 0; i < arrayStudenti.length; i++) {
+    for (let i = 0; i < arrayStudenti.length; i++) {
         document.getElementById('cicloFor').innerHTML += `<h3>Studente ${i + 1}: ${arrayStudenti[i]}</h3>`;
     }
 }
