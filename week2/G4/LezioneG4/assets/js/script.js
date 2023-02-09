@@ -27,6 +27,9 @@ function controlla() {
 }
 
 function calcola() {
+    numero1 = Number(numero1);
+    numero2 = Number(numero2);
+    
 	switch (operazione) {
 		case 'addizione':
 			risultato = numero1 + numero2;
