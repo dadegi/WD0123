@@ -43,6 +43,9 @@ const umberto = new Studente('Umberto', 'Barera', 'WD0123');
 const vincenzo = new Studente('Vincenzo', 'De Vito', 'WD0123');
 const valerio = new Studente('Valerio', 'Tiso', 'WD0123');
 
+const miaData = new Date(1967,09,20);
+console.log(miaData);
+
 document.getElementById('studenti').innerHTML =
     umberto.stampa() + ', ' + vincenzo.stampa() + ', ' + valerio.stampa();
 
