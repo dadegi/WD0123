@@ -104,6 +104,9 @@ document.getElementById('array12').innerHTML += array2;
 array2.splice(2, 0, 'Sabrina');
 document.getElementById('array13').innerHTML += array2;
 
+var nuovoArray = array2.slice(2,5);
+document.getElementById('array14').innerHTML += nuovoArray;
+
 // IF-ELSE IF-ELSE
 
 var numero1 = 10;
