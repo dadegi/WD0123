@@ -10,7 +10,7 @@ function funzionePromise() { // Funzione di tipo promise: in tre secondi genera 
 					'Il risultato non rientra nel range indicato. Numero generato: ' +
 						numero
 			  );
-		}, 3000);
+		}, 10001);
 	});
 }
 
@@ -22,12 +22,6 @@ function attendiPromise() { // Funzione che chiama la promise e restituisce un m
 	}
 }
 
-scrivi(); // Funzione eseguita al caricamento della pagina indipendentemente dalla promise
-
-function scrivi() {
-	console.log('Ciao');
-}
-
 let timer  = 1;
 let avviaTimer = setInterval(() => {
     if (timer < 11) {
@@ -36,6 +30,12 @@ let avviaTimer = setInterval(() => {
     } else {
         clearInterval(avviaTimer);
     }
-}, 1500);
+}, 1000);
 
 avviaTimer; // Timer eseguito al caricamento della pagina indipendentemente dalla promise, che viene eseguito sia prima dell'esecuzione della promise che dopo la sua risposta, avendo un tempo di attesa inferiore
+
+scrivi(); // Funzione eseguita al caricamento della pagina indipendentemente dalla promise
+
+function scrivi() {
+	console.log('Ciao');
+}
